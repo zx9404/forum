@@ -1,0 +1,7 @@
+2020-04-18 15:45:16.205  INFO 34196 --- [main] c.z.f.ForumFrontApplicationTests         : Starting ForumFrontApplicationTests on LAPTOP-9G1EGF9O with PID 34196 (started by Administrator in D:\forum\forum_front)
+2020-04-18 15:45:16.207  INFO 34196 --- [main] c.z.f.ForumFrontApplicationTests         : No active profile set, falling back to default profiles: default
+2020-04-18 15:45:16.602  WARN 34196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zx.forum_front]' package. Please check your configuration.
+2020-04-18 15:45:17.185  INFO 34196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-18 15:45:17.709  INFO 34196 --- [main] c.z.f.ForumFrontApplicationTests         : Started ForumFrontApplicationTests in 1.7 seconds (JVM running for 2.487)
+2020-04-18 15:45:17.866  INFO 34196 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-04-18 15:45:17.867  INFO 34196 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
