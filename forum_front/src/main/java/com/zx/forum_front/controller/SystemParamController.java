@@ -48,15 +48,16 @@ public class SystemParamController {
         int result = systemParamService.updateSystemParam(paramCode, paramValue, paramDesc, paramPrepare);
         return result;
     }
+
     /**
      * 删除系统参数
      *
-     * @param paramCodes    参数代码，可多个
+     * @param paramCodes 参数代码，可多个
      * @return
      */
-    /*@RequestMapping("deleteSystemParam")
+    @RequestMapping("deleteSystemParam")
     public int updateSystemParam(@RequestParam("paramCodes") String paramCodes) {
-        int result = systemParamService.updateSystemParam(paramCode, paramValue, paramDesc, paramPrepare);
+        int result = systemParamService.deleteSystemParam(paramCodes);
         return result;
-    }*/
+    }
 }
