@@ -28,9 +28,9 @@ public class PrepareSysParamListener implements ServletContextListener {
          * 系统参数进行预热
          */
         List<SystemParamDO> list = systemParamMapper.selectSystemParamsNeedCached();
-       /* for (SystemParamEntity entity : list) {
+        for (SystemParamDO entity : list) {
             redisTemplate.opsForValue().set(entity.getParamCode(), entity.getParamValue());
-        }*/
+        }
     }
 
     @Override
