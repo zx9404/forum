@@ -1,7 +1,7 @@
 package com.zx.forum_front.listener;
 
 import com.zx.forum_front.dao.SystemParamMapper;
-import com.zx.forum_front.entity.SystemParamEntity;
+import com.zx.forum_front.entity.SystemParamDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 
@@ -27,7 +27,7 @@ public class PrepareSysParamListener implements ServletContextListener {
         /**
          * 系统参数进行预热
          */
-        List<SystemParamEntity> list = systemParamMapper.selectSystemParamsNeedCached();
+        List<SystemParamDO> list = systemParamMapper.selectSystemParamsNeedCached();
        /* for (SystemParamEntity entity : list) {
             redisTemplate.opsForValue().set(entity.getParamCode(), entity.getParamValue());
         }*/

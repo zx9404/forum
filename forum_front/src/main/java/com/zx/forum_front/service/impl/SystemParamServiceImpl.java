@@ -30,6 +30,7 @@ public class SystemParamServiceImpl implements SystemParamService {
 
     @Override
     public int deleteSystemParam(String paramCodes) {
-        return 0;
+        int code = systemParamMapper.deleteSystemParam(paramCodes);
+        return code;
     }
 }

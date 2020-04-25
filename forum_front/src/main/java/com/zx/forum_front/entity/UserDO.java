@@ -10,22 +10,45 @@ import java.util.Date;
  * @content
  **/
 @Data
-public class UserEntity {
+public class UserDO {
     private int id;
-    //用户id
+    /**
+     * 用户id
+     */
     private String userId;
-    //手机号码
+
+    /**
+     * 手机号码
+     */
     private String telephone;
-    //邮箱
+
+    /**
+     * 邮箱
+     */
     private String yx;
-    //用户姓名
+
+    /**
+     * 用户姓名
+     */
     private String username;
-    //用户密码
+
+    /**
+     * 用户密码
+     */
     private String password;
-    //上次登录ip
+
+    /**
+     * 上次登录ip
+     */
     private String lastLoginIp;
-    //性别
+
+    /**
+     * 性别
+     */
     private int sex;
-    //上次修改密码的日期
+
+    /**
+     * 上次修改密码的日期
+     */
     private Date lastChangePassword;
 }

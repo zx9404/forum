@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zx.forum_front.dao.SystemParamMapper">
+    <resultMap id="entityList" type="com.zx.forum_front.entity.SystemParamDO">
+        <result column="dictionaryType" property="dictionaryType" jdbcType="VARCHAR"/>
+        <result column="dictionaryValue" property="dictionaryValue" jdbcType="VARCHAR"/>
+        <result column="dictionaryDescribe" property="dictionaryDescribe" jdbcType="INTEGER"/>
+    </resultMap>
+    <select id="listDictionary" resultMap="entityList">
+       select * from t_systemdictionary  where dictionaryType=#{dictionaryType,jdbcType=VARCHAR};
+    </select>
+</mapper>
